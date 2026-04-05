@@ -20,7 +20,16 @@ const audioPlayer: AudioPlayer={
     }
 }
 
-const {} = audioPlayer
+const {song:anotherSong, songDuration:duration, datails} = audioPlayer
+const {author} = datails
 
-console.log('Song: ')
+//console.log('Song: ', anotherSong);
+//console.log('Duration: ', duration);
+//console.log('Author: ', author)
+
+const dbz: string[] = ['Goku', 'Vegeta', 'Trunks'];
+console.log('Personaje 3: ', dbz[3])
+
+const [ , , trunks = 'Not found'] : string[] = dbz;
+console.log('Personaje 3: ', trunks);
 export{}
